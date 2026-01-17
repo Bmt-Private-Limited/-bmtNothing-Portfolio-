@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  background-color: black;
+  color: white;
+}
+
+aside {
+  position: relative;
+}
+
+.aside {
+  /* position: sticky; */
+  position: fixed;
+  width: 105px;
+  top: 0;
+  left: 0;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.aside img {
+  width: 100%;
+  filter: contrast(0.5);
+}
+
+.aside .section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.aside .section i {
+  font-size: 36px;
+}
+
+main {
+  padding: 20px 225px;
+}
+main > header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: url(media/me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed; */
+}
+
+header h1 {
+  font-size: 64px;
+  /* margin-top: 200px; */
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 15px;
+}
+
+header img {
+  width: 50%;
+}
+
+.about {
+  padding: 20px 0;
+}
+
+.about h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.about p {
+  font-size: 15px;
+  padding: 20px 0;
+  color: #757575;
+  text-align: justify;
+}
+
+.skill {
+  padding: 20px 0;
+}
+.skill h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.skill-box > p {
+  color: #757575;
+  font-size: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 3px;
+}
+
+.skill-box .row {
+  width: 100%;
+  background-color: white;
+  height: 28px;
+  margin-bottom: 15px;
+}
+.skill-box .inner-row {
+  background-color: #616161;
+  height: 100%;
+}
+
+.mile-stone {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f1f1f1;
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+}
+
+.mile-stone .box p:nth-child(1) {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.mile-stone .box p:nth-child(2) {
+  font-size: 15px;
+}
+
+.mile-container button span {
+  padding-right: 5px;
+}
+.mile-container button {
+  padding: 12px 24px;
+  margin-top: 31px;
+}
+
+.pricing {
+  padding: 60px 0;
+}
+
+.pricing > h2 {
+  font-size: 20px;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ccc;
+  text-align: center;
+  color: black;
+}
+
+.card h2 {
+  font-size: 24px;
+  background-color: #616161;
+  padding: 20px;
+  color: white;
+}
+
+.card > p {
+  font-size: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #00000033;
+}
+
+.card div {
+  border-bottom: 1px solid #00000033;
+}
+.card div:nth-of-type(1) {
+  padding: 0 20px 20px 20px;
+}
+.card div:nth-of-type(1) > p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.card div:nth-of-type(1) > p:nth-child(2) {
+  font-size: 15px;
+}
+
+.card div:nth-of-type(2) {
+  padding: 0 20px 20px 20px;
+}
+.card div:nth-of-type(2) > button {
+  padding: 12px 24px;
+  border: none;
+}
+
+.reputaion h2 {
+  margin-bottom: 25px;
+}
+.reputaion .container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+.reputaion .row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.reputaion .row .left img {
+  width: 80px;
+  border-radius: 50%;
+}
+.reputaion .row .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #757575;
+}
+.reputaion .row .right P {
+  font-size: 15px;
+}
+.reputaion .row .right P span {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.my-photos {
+  margin: 60px 0;
+}
+.my-photos h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  padding: 20px 0;
+
+  grid-template-columns: 1fr 1fr;
+
+  /* base row tracks */
+  grid-template-rows:
+    286px /* row 1 */
+    176px /* row 2 */
+    286px /* row 4 */
+    286px /* row 5 */
+    345px; /* row 6 */
+
+  gap: 14px;
+}
+
+/* ================= GRID AREAS ================= */
+/*
+AREA MAP (visual):
+
+┌───────────────┬───────────────┐
+│   img1        │   img2        │
+├───────────────┤               │
+│               │               │
+│   img3        │               │
+│               ├───────────────┤
+│               │   img4        │
+│               ├───────────────┤
+│               │   img6        │
+├───────────────┼───────────────┤
+│   img5        │   img7        │
+└───────────────┴───────────────┘
+*/
+.gallery {
+  grid-template-areas:
+    "img1 img2"
+    "img3 img2"
+    "img3 img4"
+    "img3 img6"
+    "img5 img7";
+  /* "img5 img7"; */
+}
+
+/* ================= COMMON IMAGE STYLE ================= */
+.photo {
+  overflow: hidden;
+  background: #222;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= AREA ASSIGNMENTS ================= */
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+
+.contact-section h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.contact-section .container {
+  padding: 20px 0;
+}
+.contact-section .container p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  color: #757575;
+}
+.contact-section .container p span {
+  font-size: 36px;
+  padding-right: 20px;
+  color: white;
+}
+
+.form {
+  margin: 40px 0;
+}
+
+.form p {
+  font-size: 15px;
+  color: rgb(117, 117, 117);
+  padding: 15px 0;
+}
+
+form input {
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.form button {
+  padding: 12px 24px;
+  font-size: 15px;
+}
+
+.social-icon {
+  display: flex;
+  gap: 5px;
+}
+
+.social-icon i {
+  font-size: 24px;
+  color: rgb(117, 117, 117);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ffffffa8;
+  color: black;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 20px 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 426px) {
+  aside,
+  .aside {
+    display: none;
+  }
+  .main-body {
+    grid-template-columns: 1fr;
+  }
+  main {
+    background-color: black;
+    padding: 20px 30px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+
+  .mile-stone {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about h3,
+  .skill h2,
+  .reputaion h2,
+  .my-photos h2,
+  .contact-section h2 {
+    font-size: 20px;
+  }
+
+  .card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .reputaion .row .right P {
+    font-size: 13px;
+  }
+  .reputaion .row .right P span {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .reputaion .row .right {
+    gap: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
