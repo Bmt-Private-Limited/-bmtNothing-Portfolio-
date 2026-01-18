@@ -256,9 +256,9 @@ header img {
   grid-template-rows:
     286px /* row 1 */
     176px /* row 2 */
+    286px /* row 3 */
     286px /* row 4 */
-    286px /* row 5 */
-    345px; /* row 6 */
+    345px;/* row 5 */
 
   gap: 14px;
 }
@@ -277,7 +277,8 @@ AREA MAP (visual):
 │               ├───────────────┤
 │               │   img6        │
 ├───────────────┼───────────────┤
-│   img5        │   img7        │
+│               |               |
+|   img5        │   img7        │
 └───────────────┴───────────────┘
 */
 .gallery {
@@ -287,7 +288,6 @@ AREA MAP (visual):
     "img3 img4"
     "img3 img6"
     "img5 img7";
-  /* "img5 img7"; */
 }
 
 /* ================= COMMON IMAGE STYLE ================= */
@@ -392,6 +392,7 @@ footer {
 @media screen and (max-width: 1024px) {
   main {
     padding: 20px 60px;
+    background: black;
   }
 }
 @media screen and (max-width: 768px) {
@@ -445,6 +446,14 @@ footer {
 
   .gallery {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+     grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7";
   }
 }
